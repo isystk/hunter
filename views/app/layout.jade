@@ -1,0 +1,36 @@
+!!! 5
+html(lang='ja')
+	head
+		meta(charset='utf8')
+		title #{title}
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(name='apple-mobile-web-app-status-bar-style',content='black-translucent')
+		meta(name='language', content='jp')
+		meta(name='keywords', content='game')
+		meta(name='description', content='#{description}')
+		meta(name='robots', content='index,follow')
+		meta(name='revisit-after', content='14 days')
+		meta(name='msvalidate.01', content='A7F4598F15914A7C83FC056C3FEBE489')
+		//link(href='/img/apple-touch-icon-precomposed.png', rel='apple-touch-icon-precomposed')
+		link(href='/img/apple-touch-icon.png', rel='apple-touch-icon')
+		link(rel='stylesheet', href='/css/default.css')
+		link(rel='stylesheet', href='/css/development.css')
+		link(rel='stylesheet', href='/css/style.css')
+	body
+		block content
+
+	script(type='text/javascript', src='/socket.io/socket.io.js')
+
+	script(type='text/javascript', src='/js/lib/jquery.js')
+	script(type='text/javascript', src='/js/lib/jquery-plugins.min.js')
+	script(type='text/javascript', src='/js/lib/jsdeferred.js')
+	script(type='text/javascript', src='/js/lib/underscore.js')
+	script(type='text/javascript', src='/js/lib/enchant.js')
+	script(type='text/javascript', src='/js/lib/util.enchant.js')
+	script(type='text/javascript', src='/js/lib/nineleap.enchant.js')
+
+	each script in scripts
+		script(src='#{script}')
+
+

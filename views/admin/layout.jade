@@ -1,0 +1,64 @@
+!!! 5
+html(lang='ja')
+	head
+		meta(charset='utf8')
+		title (#{mode}) #{title}
+		meta(name='description', content='{description}')
+		link(type='text/css', rel='stylesheet', href='/css/base.css')
+		link(type='text/css', rel='stylesheet', href='/css/admin.css')
+		link(type='text/css', rel='stylesheet', href='/css/jquery-ui-1.8.13.custom.css')
+		link(type='text/css', rel='stylesheet', href='/js/lib/jquery-ui/jquery-ui.custom.css')
+	body(class='#{mode}')
+		<!-- root -->
+		#page
+			header
+				h1 #{title} (#{mode})
+				<!-- status info -->
+				#headStat
+				<!-- global navigation -->
+				nav
+					ul
+						li.user
+							a(href='#', class='menu', data-menu='user') ユーザー
+						li.level
+							a(href='#', class='menu', data-menu='level') レベル
+						li.npc
+							a(href='#', class='menu', data-menu='npc') NPC
+						li.admin
+							a(href='#', class='menu', data-menu='admin') 管理操作ログ
+			#content
+				block content
+			footer
+				span#confidential CONFIDENTIAL
+				Copyright©2012-2013 ISE INC. All rights reserved.
+				a(href="http://www.ise-web.com/", rel="noreferer nofollow") ISE
+
+	script(type='text/javascript', src='/socket.io/socket.io.js')
+	script(type='text/javascript', src='/js/lib/date-utils.min.js')
+	script(type='text/javascript', src='/js/lib/underscore.js')
+	script(type='text/javascript', src='/js/lib/jsdeferred.js')
+
+	script(type='text/javascript', src='/js/lib/jquery.js')
+	script(type='text/javascript', src='/js/lib/jquery-ui/jquery-ui.custom.min.js')
+	script(type='text/javascript', src='/js/lib/jquery.validation.min.js')
+	script(type='text/javascript', src='/js/lib/jquery.json-2.2.min.js')
+	script(type='text/javascript', src='/js/lib/jquery.cookie.js')
+	script(type='text/javascript', src='/js/lib/jquery.notifybar.js')
+	script(type='text/javascript', src='/js/lib/jquery.form.js')
+	script(type='text/javascript', src='/js/lib/jquery.facebox.js')
+	script(type='text/javascript', src='/js/lib/jquery.pager.js')
+
+	script(type='text/javascript', src='/js/common.js')
+	script(type='text/javascript', src='/js/lib/tag.js')
+
+	script(type='text/javascript', src='/js/client.js')
+	script(type='text/javascript', src='/js/handler.js')
+
+	script(type='text/javascript', src='/js/admin-form.js')
+	script(type='text/javascript', src='/js/login.js')
+	script(type='text/javascript', src='/js/oplog.js')
+
+	script(type='text/javascript', src='/js/admin-handler-user.js')
+	script(type='text/javascript', src='/js/admin-handler-level.js')
+	script(type='text/javascript', src='/js/admin-handler-npc.js')
+

@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+/*** Hunter CSS Document *************************************
+
+	style.css
+	アプリ別スタイルシート
+
+----------------------------------------------------------------***/
+
+body {
+	text-align: center;
+}
+
+/* メッセージ表示 */
+.message {
+	background-color: #D0FFE0;
+	float: right;
+	width: 185px;
+	margin: 20px 0 0 0;
+}
+
+/** ボタン */
+.button button{
+	border-left: 1px solid #ccc;
+	cursor: pointer;
+	color: #666;
+	width: 150px;
+	height: 38px;
+	font-size: 12px;
+}
+
+.blue button{
+	background-image: url("../img/button_blue.gif");
+	color: #ffffff;
+}
+.blue button:hover { 
+	background-image: url("../img/button_blue_select.gif");
+}
+
+.red button{
+	background-image: url("../img/button_red.gif");
+	color: #ffffff;
+}
+.red button:hover {
+	background-image: url("../img/button_red_select.gif");
+}
+
+/** ヘッダーエリア */
+#header {
+	top: 0px;
+	margin-left:0px;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 40px;
+	background-color: #282828;
+	color: #ffffff;
+}
+
+#userArea {
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+
+#userArea li {
+	float: left;
+	margin-right: 5px;
+}
+
+p {
+	margin-bottom: 0px;
+}
+
+p.title {
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+.content {
+	width: 640px;
+	margin:0 auto 0 auto;
+}
+
+#gameArea {
+	border: 1px solid #000000;
+	margin: 0 auto;
+	background-color: #808080;
+}
+/* アニメーション処理にはGPUアクセラレーターが利用する*/
+#gameArea *{
+	-webkit-transform:translate3d(0,0,0)
+}
+
+#talkInput {
+	width: 96%;
+}
+/** チャット表示部分 */
+.talk {
+	background-color: #ffffff;
+	text-align: center;
+	border-radius: 10px;
+	-webkei-border-radius: 10px;
+	-moz-border-radius: 10px;
+
+	filter: alpha(opacity:75);
+	-moz-opacity:0.75;
+	opacity:0.75;
+}
+
+#rankingArea {
+	border: 0px solid #000000;
+	margin: 0 auto;
+}
+
+.notice {
+	background: #FFF6BF;
+	color: #514721;
+	border-color: #FFD324;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0.8em;
+	margin-top: 1em;
+	border: 2px solid #DDD;
+	height: 50px;
+}
+
+img.user {
+	float: left;
+	padding-right: 1em;
+	width: 48px;
+	height: 48px;
+}
+
+div.userInfo {
+	text-align: left;
+}
+
+/* ソーシャルボタン */
+#socialArea {
+	padding-top: 20px;
+	width: 320px;
+	margin: 0 auto;
+}
+#socialArea ul {
+	overflow: hidden;
+}
+#socialArea li {
+	float: left;
+	margin-right: 4px;
+}
+#socialArea iframe {
+	margin: 0 !important;
+}
+.mixi {
+	padding-left: 20px;
+}
+
+/** フッターエリア */
+#footer {
+	height: 40px;
+	background-color: #282828;
+	color: #ffffff;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 15px;
+}
+
+
+/*
+*	Notify Bar - jQuery plugin
+*
+*	Copyright (c) 2009-2010 Dmitri Smirnov
+*
+*	Licensed under the MIT license:
+*	http://www.opensource.org/licenses/mit-license.php
+*	
+*	Version: 1.2
+*
+*	Project home:
+*	http://www.dmitri.me/blog/notify-bar
+*/
+
+.jquery-notify-bar {
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:32768;
+	background-color:#efefef;
+	font-size:1.4em;
+	color:#000;
+	text-align:center;
+	font-family: Arial, Verdana, sans-serif;
+	padding:20px 0px;
+	border-bottom:1px solid #bbb;
+}
+.jquery-notify-bar.error {
+	color:#f00;
+	background-color:#fdd;
+}
+.jquery-notify-bar.success {
+	color:#060;
+	background-color:#BBFFB6;
+}
+.notify-bar-close {
+	position:absolute;
+	left:95%;
+	font-size:11px;
+}
+
+/** 通信切断時 */
+.disconnect {
+	overflow-x:noscroll;
+	overflow-y:noscroll;
+	position:absolute;
+	background-color:#808080;
+	left:0px;
+	top:0px;
+	filter:Alpha(opacity=80);
+	-moz-opacity:0.80;
+	opacity:0.80;
+}
+
+.disconnect table{
+	margin: 200px auto;
+	background-color: #ffffff;
+	width: 80%;
+	height: 300px;
+}
+.disconnect th,td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#page-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 77%;
+}
+#page-top a {
+	background: #666;
+	text-decoration: none;
+	color: #fff;
+	width: 100px;
+	padding: 30px 0;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+}
+#page-top a:hover {
+	text-decoration: none;
+	background: #999;
+}
+

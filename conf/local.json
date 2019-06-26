@@ -1,0 +1,51 @@
+{
+	"piddir": "/tmp",
+	"mongodb": {
+		"hostname": "localhost",
+		"database": "hunter",
+		"schemas": [
+			{"users": {"snsType": "String", "userId": "String", "screenName": "String", "name": "String", "image": "String", "totalScore": "Number", "highScore": "Number"}},
+			{"npcs": {"name": "String", "actorType": "String"}},
+			{"levels": {"level": "Number", "totalScore": "Number"}},
+			{"user_logs": {"userId": "Object", "kind": "String", "type": "String", "time": "Date", "data": {}}},
+			{"admin_users": {"userId": "String", "password": "String", "name": "String"}},
+			{"admin_oplogs": {"name": "String", "type": "String", "ip": "String", "time": "Date", "data": {}}}
+		]
+
+	},
+	"app": {
+		"host" : "http://localhost:3000",
+		"title" : "Hunter",
+		"description" : "Nodejsとechantjsを利用したソーシャルゲーム。アメーバピグのようなチャット機能も追加しました。",
+		"port": "3000",
+		"oauth": {
+			"twitter": {
+				"consumerKey" : "",
+				"consumerSecret" : "",
+				"callbackUrl" : "http://localhost:3000/auth/twitter/callback/"
+			},
+			"facebook": {
+				"appKey" : "193020610829027",
+				"secretKey" : "1cb8bb6958ed1d7dc96e71803d872b0e",
+				"callbackUrl" : "http://localhost:3000/auth/fb/callback/"
+			}
+		},
+		"scripts": [
+			"/js/source/handler.js",
+			"/js/source/client.js",
+			"/js/source/common.js",
+			"/js/source/top.js",
+			"/js/source/const.js",
+			"/js/source/game.js",
+			"/js/source/map.js"
+		]
+	},
+	"admin": {
+		"host" : "http://localhost",
+		"title" : "管理コンソール",
+		"description" : "Hunterの管理コンソールです。",
+		"port": "9001",
+		"sessionBase" : "KhJ7^1jG6x=?UxoAtN>$niEmY/J5?hVbqf71",
+		"nic" : "lo0"
+	}
+}

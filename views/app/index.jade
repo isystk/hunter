@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	div(id='page')
+		div(id='header')
+			div(id='userArea')
+
+		div(class='content')
+			input(type='hidden',name='_id',value='#{_id}',id='_id')
+
+			p(class='title') #{title}
+			div(id='playerCount')
+			div(id='gameArea')
+				div(id='enchant-stage')
+				input(type='text', name='talkInput', id='talkInput', placeholder='')
+			div(id='buttonArea')
+			div(id='socialArea')
+			p Produced by
+				a(target='_blank', href='http://profile.ise-web.com/') Yoshitaka Ise
+
+			p(class='title')ランキング
+			div(id='rankingArea')
+			div(id='message', class='message')
+			p(id='page-top')
+				a(href='#wrap') PAGE TOP
+
+		div(id='footer')
+			p Copyright©2012-2013 ISE INC. All rights reserved.

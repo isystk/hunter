@@ -1,0 +1,45 @@
+{
+	"piddir": "/usr/local/node/pids/hunter",
+	"mongodb": {
+		"hostname": "localhost",
+		"database": "hunter",
+		"schemas": [
+			{"users": {"snsType": "String", "userId": "String", "screenName": "String", "name": "String", "image": "String", "totalScore": "Number", "highScore": "Number"}},
+			{"npcs": {"name": "String", "actorType": "String"}},
+			{"levels": {"level": "Number", "totalScore": "Number"}},
+			{"user_logs": {"userId": "Object", "kind": "String", "type": "String", "time": "Date", "data": {}}},
+			{"admin_users": {"userId": "String", "password": "String", "name": "String"}},
+			{"admin_oplogs": {"name": "String", "type": "String", "ip": "String", "time": "Date", "data": {}}}
+		]
+
+	},
+	"app": {
+		"host" : "http://hunter.ise-web.com",
+		"title" : "Hunter",
+		"description" : "Nodejsとechantjsを利用したソーシャルゲーム。アメーバピグのようなチャット機能も追加しました。",
+		"port": "3000",
+		"oauth": {
+			"twitter": {
+				"consumerKey" : "lYCXahQoTfXthuWGK4vQ",
+				"consumerSecret" : "LPmjf0ri2FTDrS82411215MPh9WLvjegJp8dcQ",
+				"callbackUrl" : "http://hunter.ise-web.com/auth/twitter/callback/"
+			},
+			"facebook": {
+				"appKey" : "140367136060681",
+				"secretKey" : "6165a60a2582464ce6f1455a44134391",
+				"callbackUrl" : "http://hunter.ise-web.com/auth/fb/callback/"
+			}
+		},
+		"scripts": [
+			"/js/hunter.js"
+		]
+	},
+	"admin": {
+		"host" : "http://hunter.ise-web.com",
+		"title" : "管理コンソール",
+		"description" : "Hunterの管理コンソールです。",
+		"port": "9001",
+		"sessionBase" : "KhJ7^1jG6x=?UxoAtN>$niEmY/J5?hVbqf71",
+		"nic" : "eth0"
+	}
+}

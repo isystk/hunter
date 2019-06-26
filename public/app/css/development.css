@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*** Hunter CSS Document *************************************
+
+	development.css
+	開発用スタイルシート
+
+----------------------------------------------------------------***/
+
+.display-none {
+	display: none;
+}
+
+.display-block {
+	display: block;
+}
+
+.display-inline {
+	display: inline;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.position-absolute {
+	position: absolute;
+}
+#thumbs {
+ height: 80px;
+ overflow: hidden;
+}

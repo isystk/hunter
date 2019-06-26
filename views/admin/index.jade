@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	form(id='login', name='login', action='admin.login', class='socket')
+		fieldset
+			legend ログイン
+			span.description パスワード忘れても教えないよ
+			p
+				label(for='userId') ログインID
+				input(class='required', type='text', name='userId', id='userId', placeholder='ログインID', autofocus='true')
+			p
+				label(for='password') パスワード
+				input(class='required', type='password', name='password', id='password', placeholder='パスワード')
+			p.buttons
+				button.ok(type='submit') ログイン

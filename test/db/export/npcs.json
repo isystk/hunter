@@ -1,0 +1,10 @@
+{ "_id" : { "$oid" : "5028e0f0cdb4f31abe0aef1e" }, "name" : "スライム", "actorType" : "2" }
+{ "_id" : { "$oid" : "5028e0f0cdb4f31abe0aef1f" }, "name" : "スライム", "actorType" : "2" }
+{ "_id" : { "$oid" : "5028e0f0cdb4f31abe0aef20" }, "name" : "スライム", "actorType" : "2" }
+{ "_id" : { "$oid" : "5028e0f0cdb4f31abe0aef21" }, "name" : "スライム", "actorType" : "2" }
+{ "_id" : { "$oid" : "5028e0f0cdb4f31abe0aef22" }, "name" : "スライム", "actorType" : "2" }
+{ "_id" : { "$oid" : "5028e0f0cdb4f31abe0aef23" }, "name" : "スライム", "actorType" : "2" }
+{ "_id" : { "$oid" : "5028e0f0cdb4f31abe0aef24" }, "name" : "スライム", "actorType" : "2" }
+{ "_id" : { "$oid" : "5028e0f0cdb4f31abe0aef25" }, "name" : "スライム", "actorType" : "2" }
+{ "_id" : { "$oid" : "5028e0f0cdb4f31abe0aef26" }, "name" : "スライム", "actorType" : "2" }
+{ "_id" : { "$oid" : "5028e0f0cdb4f31abe0aef27" }, "name" : "魔法使い", "actorType" : "3" }
