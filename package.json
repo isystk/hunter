@@ -5,7 +5,7 @@
 	"author": "IseYoshitaka <y-ise@ise-web.com>",
 	"description": "Nodejsとechantjsを利用したソーシャルゲーム。アメーバピグのようなチャット機能も追加しました。",
 	"dependencies" : {
-		"express" : "3.0.5",
+		"express" : "4.17.1",
 		"jade" : "*",
 		"socket.io" : "0.9.13",
 		"underscore" : "*",
